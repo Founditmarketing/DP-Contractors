@@ -66,16 +66,16 @@ export default function FloatingEmergencyButton() {
                     <Zap className="w-6 h-6 animate-pulse" />
                   </div>
                   
-                  <h2 className="text-3xl sm:text-4xl font-barlow font-black text-white uppercase tracking-tight mb-2">
+                  <h2 className="text-3xl sm:text-4xl font-barlow font-black text-white uppercase tracking-tight mb-2 custom-barlow-title">
                     Emergency Call Now
                   </h2>
-                  <p className="text-slate-400 font-inter text-sm sm:text-base mb-6 leading-relaxed max-w-sm mx-auto">
+                  <p className="text-slate-400 font-inter text-sm sm:text-base mb-6 leading-relaxed max-w-sm mx-auto custom-inter-body">
                     Minutes matter when equipment fails. Tap below to speak directly with our 24/7 dispatch team.
                   </p>
                   
                   <a
                     href="tel:9037851972"
-                    className="inline-flex items-center justify-center w-full py-5 text-xl font-barlow-condensed font-bold uppercase tracking-widest text-white bg-accent rounded-xl shadow-[0_0_20px_rgba(232,2,2,0.4)] hover:shadow-[0_0_35px_rgba(232,2,2,0.6)] hover:-translate-y-1 transition-all"
+                    className="inline-flex items-center justify-center w-full py-5 text-xl font-barlow-condensed font-bold uppercase tracking-widest text-white bg-accent rounded-xl shadow-[0_0_20px_rgba(232,2,2,0.4)] hover:shadow-[0_0_35px_rgba(232,2,2,0.6)] hover:-translate-y-1 transition-all custom-barlow-menu"
                   >
                     <PhoneCall className="w-6 h-6 mr-3" />
                     (903) 785-1972
@@ -85,7 +85,7 @@ export default function FloatingEmergencyButton() {
 
               {/* Bottom Half: Contact Form (Standard) */}
               <div className="p-8 sm:p-10 bg-slate-950 overflow-y-auto">
-                <h3 className="text-xl sm:text-2xl font-barlow font-black text-white uppercase tracking-tight mb-6">
+                <h3 className="text-xl sm:text-2xl font-barlow font-black text-white uppercase tracking-tight mb-6 custom-barlow-title">
                   Or Request Service
                 </h3>
                 
@@ -99,29 +99,29 @@ export default function FloatingEmergencyButton() {
                 >
                   <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                     <div>
-                      <label className="block text-xs font-barlow-condensed font-bold text-slate-400 uppercase tracking-widest mb-1.5 ml-1">Name</label>
+                      <label className="block text-xs font-barlow-condensed font-bold text-slate-400 uppercase tracking-widest mb-1.5 ml-1 custom-barlow-menu">Name</label>
                       <input 
                         type="text" 
                         required 
-                        className="w-full bg-slate-900 border border-white/5 rounded-lg px-4 py-3 text-white font-inter text-sm focus:border-primary focus:ring-1 focus:ring-primary outline-none transition-all placeholder:text-slate-600 shadow-inner" 
+                        className="w-full bg-slate-900 border border-white/5 rounded-lg px-4 py-3 text-white font-inter text-sm focus:border-primary focus:ring-1 focus:ring-primary outline-none transition-all placeholder:text-slate-600 shadow-inner custom-inter-body" 
                         placeholder="e.g. John Doe" 
                       />
                     </div>
                     <div>
-                      <label className="block text-xs font-barlow-condensed font-bold text-slate-400 uppercase tracking-widest mb-1.5 ml-1">Phone</label>
+                      <label className="block text-xs font-barlow-condensed font-bold text-slate-400 uppercase tracking-widest mb-1.5 ml-1 custom-barlow-menu">Phone</label>
                       <input 
                         type="tel" 
                         required 
-                        className="w-full bg-slate-900 border border-white/5 rounded-lg px-4 py-3 text-white font-inter text-sm focus:border-primary focus:ring-1 focus:ring-primary outline-none transition-all placeholder:text-slate-600 shadow-inner" 
+                        className="w-full bg-slate-900 border border-white/5 rounded-lg px-4 py-3 text-white font-inter text-sm focus:border-primary focus:ring-1 focus:ring-primary outline-none transition-all placeholder:text-slate-600 shadow-inner custom-inter-body" 
                         placeholder="(555) 555-5555" 
                       />
                     </div>
                   </div>
 
                   <div>
-                    <label className="block text-xs font-barlow-condensed font-bold text-slate-400 uppercase tracking-widest mb-1.5 ml-1">Service Required</label>
+                    <label className="block text-xs font-barlow-condensed font-bold text-slate-400 uppercase tracking-widest mb-1.5 ml-1 custom-barlow-menu">Service Required</label>
                     <div className="relative">
-                      <select className="w-full bg-slate-900 border border-white/5 rounded-lg px-4 py-3 text-slate-300 font-inter text-sm focus:border-primary focus:ring-1 focus:ring-primary outline-none transition-all appearance-none cursor-pointer shadow-inner">
+                      <select className="w-full bg-slate-900 border border-white/5 rounded-lg px-4 py-3 text-slate-300 font-inter text-sm focus:border-primary focus:ring-1 focus:ring-primary outline-none transition-all appearance-none cursor-pointer shadow-inner custom-inter-body">
                         <option>Walk-In Coolers / Freezers</option>
                         <option>Ice Machines</option>
                         <option>Restaurant Ventilation</option>
@@ -135,18 +135,18 @@ export default function FloatingEmergencyButton() {
                   </div>
 
                   <div>
-                    <label className="block text-xs font-barlow-condensed font-bold text-slate-400 uppercase tracking-widest mb-1.5 ml-1">Issue Description</label>
+                    <label className="block text-xs font-barlow-condensed font-bold text-slate-400 uppercase tracking-widest mb-1.5 ml-1 custom-barlow-menu">Issue Description</label>
                     <textarea 
                       required 
                       rows={3} 
-                      className="w-full bg-slate-900 border border-white/5 rounded-lg px-4 py-3 text-white font-inter text-sm focus:border-primary focus:ring-1 focus:ring-primary outline-none transition-all resize-none placeholder:text-slate-600 shadow-inner" 
+                      className="w-full bg-slate-900 border border-white/5 rounded-lg px-4 py-3 text-white font-inter text-sm focus:border-primary focus:ring-1 focus:ring-primary outline-none transition-all resize-none placeholder:text-slate-600 shadow-inner custom-inter-body" 
                       placeholder="Briefly describe the equipment and problem..."
                     ></textarea>
                   </div>
 
                   <button 
                     type="submit" 
-                    className="w-full mt-4 py-4 bg-white text-slate-950 font-barlow-condensed font-bold uppercase tracking-widest text-sm rounded-lg hover:bg-slate-200 transition-all shadow-[0_0_15px_rgba(255,255,255,0.1)] hover:shadow-[0_0_20px_rgba(255,255,255,0.3)] flex items-center justify-center hover:-translate-y-0.5"
+                    className="w-full mt-4 py-4 bg-white text-slate-950 font-barlow-condensed font-bold uppercase tracking-widest text-sm rounded-lg hover:bg-slate-200 transition-all shadow-[0_0_15px_rgba(255,255,255,0.1)] hover:shadow-[0_0_20px_rgba(255,255,255,0.3)] flex items-center justify-center hover:-translate-y-0.5 custom-barlow-menu"
                   >
                     <Send className="w-4 h-4 mr-2" />
                     Submit Request

@@ -23,13 +23,13 @@ export default function EmergencyBanner() {
           >
             <div className="inline-flex items-center justify-center p-2 bg-red-500/10 border border-red-500/30 rounded-full mb-6 backdrop-blur-sm">
               <AlertOctagon className="w-5 h-5 text-accent mr-2 animate-pulse" />
-              <span className="text-red-200 font-barlow-condensed font-bold tracking-widest uppercase text-xs">Critical Response Team</span>
+              <span className="text-red-200 font-barlow-condensed font-bold tracking-widest uppercase text-xs custom-barlow-menu">Critical Response Team</span>
             </div>
-            <h2 className="text-3xl leading-[1.1] sm:text-5xl lg:text-6xl font-barlow font-black uppercase tracking-tight text-white mb-6 drop-shadow-lg tracking-wider px-2 lg:px-0">
+            <h2 className="text-3xl leading-[1.1] sm:text-5xl lg:text-6xl font-barlow font-black uppercase tracking-tight text-white mb-6 drop-shadow-lg tracking-wider px-2 lg:px-0 custom-barlow-title">
               Walk-in Cooler down? <br className="hidden sm:block" />
               <span className="text-transparent bg-clip-text bg-gradient-to-r from-red-400 to-accent font-normal">Every minute costs you money.</span>
             </h2>
-            <p className="text-xl text-slate-300 font-inter font-light leading-relaxed max-w-2xl mx-auto lg:mx-0">
+            <p className="text-xl text-slate-300 font-inter font-light leading-relaxed max-w-2xl mx-auto lg:mx-0 custom-inter-body">
               We dispatch immediately to Paris, Broken Bow, Idabel, and surrounding areas. Don't lose your inventory.
             </p>
           </motion.div>
@@ -43,7 +43,7 @@ export default function EmergencyBanner() {
           >
             <a
               href="tel:9037851972"
-              className="group relative inline-flex items-center justify-center px-10 py-6 text-2xl sm:text-3xl font-barlow font-black uppercase tracking-tight text-white bg-accent rounded-xl transition-all shadow-[0_0_30px_#e80202] hover:shadow-[0_0_50px_#e80202] tracking-wider"
+              className="group relative inline-flex items-center justify-center px-10 py-6 text-2xl sm:text-3xl font-barlow font-black uppercase tracking-tight text-white bg-accent rounded-xl transition-all shadow-[0_0_30px_#e80202] hover:shadow-[0_0_50px_#e80202] tracking-wider custom-barlow-title"
             >
               {/* Radar Pulse Ring */}
               <div className="absolute inset-0 rounded-xl border border-accent/50 animate-[ping_3s_ease-out_infinite] opacity-40 pointer-events-none"></div>
@@ -53,7 +53,7 @@ export default function EmergencyBanner() {
               <PhoneCall className="mr-4 w-8 h-8 sm:w-10 sm:h-10 relative z-20" />
               <span className="font-normal relative z-20">(903) 785-1972</span>
             </a>
-            <p className="text-center text-slate-400 mt-6 sm:mt-8 font-barlow-condensed font-semibold tracking-widest uppercase text-xs">Tap to call 24/7/365</p>
+            <p className="text-center text-slate-400 mt-6 sm:mt-8 font-barlow-condensed font-semibold tracking-widest uppercase text-xs custom-barlow-menu">Tap to call 24/7/365</p>
           </motion.div>
 
         </div>

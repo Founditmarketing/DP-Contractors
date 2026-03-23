@@ -41,7 +41,7 @@ export default function Services() {
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
-            className="text-4xl font-barlow font-black uppercase tracking-tight text-white sm:text-5xl tracking-wider"
+            className="text-4xl font-barlow font-black uppercase tracking-tight text-white sm:text-5xl tracking-wider custom-barlow-title"
           >
             Specialty <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-primary">Refrigeration</span> & HVAC
           </motion.h2>
@@ -50,7 +50,7 @@ export default function Services() {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ delay: 0.2 }}
-            className="mt-6 text-xl text-slate-400 font-inter font-light leading-relaxed"
+            className="mt-6 text-xl text-slate-400 font-inter font-light leading-relaxed custom-inter-body"
           >
             We specialize in the heavy-duty equipment that keeps your business operational. When your walk-in goes down, we step up.
           </motion.p>
@@ -86,8 +86,8 @@ export default function Services() {
                 `}>
                   <service.icon className="w-8 h-8" />
                 </div>
-                <h3 className="text-xl font-barlow-condensed font-bold uppercase tracking-widest text-white mb-4">{service.title}</h3>
-                <p className="text-slate-400 leading-relaxed text-lg font-inter font-light">
+                <h3 className="text-xl font-barlow-condensed font-bold uppercase tracking-widest text-white mb-4 custom-barlow-menu">{service.title}</h3>
+                <p className="text-slate-400 leading-relaxed text-lg font-inter font-light custom-inter-body">
                   {service.description}
                 </p>
               </div>
