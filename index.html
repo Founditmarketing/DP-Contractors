@@ -3,11 +3,40 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>D&P Contractors | Commercial Refrigeration & HVAC</title>
+    <meta name="description" content="D&P Contractors is the premier commercial refrigeration and heavy-duty HVAC service company deploying emergency repair teams across Northeast Texas and Southeast Oklahoma." />
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700&family=Barlow:wght@800;900&family=Inter:wght@400;500&display=swap" rel="stylesheet">
-    <title>D&P Contractors | Commercial Refrigeration & HVAC</title>
-    <meta name="description" content="D&P Contractors is the premier commercial refrigeration and heavy-duty HVAC service company deploying emergency repair teams across Northeast Texas and Southeast Oklahoma." />
+
+    <style>
+      /* UNIVERSAL OVERRIDE - CANNOT BE PURGED */
+      :root {
+        --font-barlow: 'Barlow', sans-serif;
+        --font-condensed: 'Barlow Condensed', sans-serif;
+        --font-inter: 'Inter', sans-serif;
+      }
+      
+      html, body, p, span, div, input, textarea, li {
+        font-family: var(--font-inter) !important;
+      }
+      
+      h1, h2, h3, h4, h5, h6, .font-barlow {
+        font-family: var(--font-barlow) !important;
+        text-transform: uppercase !important;
+      }
+      
+      nav, nav a, nav span, header a, button, .nav-link, .city-badge, .font-barlow-condensed {
+        font-family: var(--font-condensed) !important;
+        text-transform: uppercase !important;
+        letter-spacing: 0.05em !important;
+      }
+      
+      /* Exceptions to prevent Inter from overriding the Nav and Headers */
+      h1 span, h2 span, h3 span { font-family: var(--font-barlow) !important; }
+      button span { font-family: var(--font-condensed) !important; }
+    </style>
   </head>
   <body>
     <div id="root"></div>
