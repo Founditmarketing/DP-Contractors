@@ -1,5 +1,13 @@
 import {StrictMode} from 'react';
 import {createRoot} from 'react-dom/client';
+import '@fontsource/barlow/800.css';
+import '@fontsource/barlow/900.css';
+import '@fontsource/barlow-condensed/600.css';
+import '@fontsource/barlow-condensed/700.css';
+import '@fontsource/inter/300.css';
+import '@fontsource/inter/400.css';
+import '@fontsource/inter/500.css';
+
 import App from './App.tsx';
 import './index.css';
 
