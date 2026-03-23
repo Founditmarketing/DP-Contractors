@@ -1,10 +1,29 @@
-@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700&family=Barlow:wght@800;900&family=Inter:wght@400;500&display=swap');
 @import "tailwindcss";
 @config "../tailwind.config.ts";
 
 @theme {
   --color-primary: #2c45ae;
   --color-accent: #e80202;
+}
+
+@layer base {
+  /* Base body font */
+  html, body {
+    font-family: 'Inter', sans-serif;
+  }
+  
+  /* Industrial Headers */
+  h1, h2, h3, h4, h5, h6 {
+    font-family: 'Barlow', sans-serif;
+    text-transform: uppercase;
+  }
+  
+  /* Navigation, Buttons, and Badges */
+  nav, nav a, header a, button, .badge {
+    font-family: 'Barlow Condensed', sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+  }
 }
 
 @layer utilities {
@@ -34,29 +53,4 @@
   60% { transform: translate(1px, 1px); }
   80% { transform: translate(1px, -1px); }
   100% { transform: translate(0); }
-}
-
-/* --- GLOBAL TYPOGRAPHY RESET --- */
-
-/* 1. All Major Headings -> Barlow */
-h1, h2, h3, h4, h5, h6 {
-    font-family: 'Barlow', sans-serif !important;
-    text-transform: uppercase;
-}
-
-/* 2. Navigation, Buttons, and specific UI elements -> Barlow Condensed */
-nav, nav a, header a, button, .city-badge, .nav-link {
-    font-family: 'Barlow Condensed', sans-serif !important;
-    text-transform: uppercase;
-    letter-spacing: 0.05em;
-}
-
-/* 3. All standard text, paragraphs, and inputs -> Inter */
-body, p, span, a, input, textarea, li {
-    font-family: 'Inter', sans-serif !important;
-}
-
-/* Exception: Don't let the Inter 'span' rule override the Nav links */
-nav span, button span {
-    font-family: 'Barlow Condensed', sans-serif !important;
 }
