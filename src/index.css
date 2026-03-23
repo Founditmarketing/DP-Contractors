@@ -3,9 +3,9 @@
 @theme {
   --color-primary: #2c45ae;
   --color-accent: #e80202;
-  --font-barlow: "Barlow", sans-serif;
-  --font-barlow-condensed: "Barlow Condensed", sans-serif;
-  --font-inter: "Inter", sans-serif;
+  --font-barlow: 'Barlow', sans-serif;
+  --font-barlow-condensed: 'Barlow Condensed', sans-serif;
+  --font-inter: 'Inter', sans-serif;
 }
 
 @layer utilities {
