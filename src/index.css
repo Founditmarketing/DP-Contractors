@@ -3,12 +3,18 @@
 @theme {
   --color-primary: #2c45ae;
   --color-accent: #e80202;
-  --font-barlow: 'Barlow', sans-serif;
-  --font-barlow-condensed: 'Barlow Condensed', sans-serif;
-  --font-inter: 'Inter', sans-serif;
 }
 
 @layer utilities {
+  .font-barlow {
+    font-family: "Barlow", sans-serif !important;
+  }
+  .font-barlow-condensed {
+    font-family: "Barlow Condensed", sans-serif !important;
+  }
+  .font-inter {
+    font-family: "Inter", sans-serif !important;
+  }
   .animate-marquee {
     animation: marquee 30s linear infinite;
   }
