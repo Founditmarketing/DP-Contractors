@@ -55,11 +55,11 @@ export default function Hero() {
             className="inline-flex items-center justify-center px-4 py-1.5 mb-8 rounded-full border border-white/20 bg-white/10 backdrop-blur-sm"
           >
             <span className="flex h-2 w-2 rounded-full bg-accent animate-pulse mr-2"></span>
-            <span className="text-white/90 text-xs font-barlow-condensed font-bold tracking-widest uppercase">Serving Northeast TX & Southeast OK</span>
+            <span style={{ fontFamily: '"Barlow Condensed", sans-serif', textTransform: 'uppercase', letterSpacing: '0.05em' }} className="text-white/90 text-xs font-barlow-condensed font-bold tracking-widest uppercase">Serving Northeast TX & Southeast OK</span>
           </motion.div>
 
           <motion.h1
-            variants={container}
+            style={{ fontFamily: '"Barlow", sans-serif', textTransform: 'uppercase' }} variants={container}
             initial="hidden"
             animate="visible"
             className="text-4xl min-[400px]:text-5xl sm:text-6xl lg:text-7xl font-barlow font-black uppercase tracking-tight text-white leading-[1.1] mb-6 px-1"
@@ -84,7 +84,7 @@ export default function Hero() {
           </motion.h1>
           
           <motion.p
-            initial={{ opacity: 0, y: 20 }}
+            style={{ fontFamily: '"Inter", sans-serif' }} initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 1.2 }}
             className="mt-6 text-base min-[400px]:text-lg sm:text-2xl text-slate-300 leading-relaxed max-w-3xl mx-auto font-inter font-light px-2 sm:px-4"
@@ -99,7 +99,7 @@ export default function Hero() {
             className="mt-10 flex flex-col sm:flex-row gap-6 justify-center items-center"
           >
             <Link
-              to="/contact"
+              style={{ fontFamily: '"Barlow Condensed", sans-serif', textTransform: 'uppercase', letterSpacing: '0.05em' }} to="/contact"
               className="group relative inline-flex items-center justify-center px-8 py-4 text-sm font-barlow-condensed font-bold uppercase tracking-widest text-white bg-primary rounded-md transition-all shadow-[0_0_20px_rgba(44,69,174,0.5)] hover:shadow-[0_0_35px_rgba(44,69,174,0.8)] hover:-translate-y-1 overflow-hidden"
             >
               <div className="absolute inset-0 bg-white/20 translate-y-full group-hover:translate-y-0 transition-transform duration-300 ease-out"></div>
@@ -107,7 +107,7 @@ export default function Hero() {
             </Link>
             
             <a
-              href="#services"
+              style={{ fontFamily: '"Barlow Condensed", sans-serif', textTransform: 'uppercase', letterSpacing: '0.05em' }} href="#services"
               className="inline-flex items-center justify-center px-8 py-4 text-sm font-barlow-condensed font-bold uppercase tracking-widest text-white bg-transparent border-2 border-white/30 rounded-md hover:bg-white/10 hover:border-white transition-all backdrop-blur-sm"
             >
               Explore Our Services

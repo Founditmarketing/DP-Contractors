@@ -25,22 +25,22 @@ export default function CityLandingPageTemplate({ cityName, state }: CityLanding
           <div className="absolute top-1/4 left-1/2 -translate-x-1/2 w-96 h-96 bg-primary/10 rounded-full blur-[120px] pointer-events-none -z-10"></div>
           
           <div className="relative z-10 w-full max-w-4xl mx-auto">
-            <div className="inline-flex items-center justify-center px-4 py-2 rounded-full bg-white/5 border border-white/10 text-slate-300 text-xs font-barlow-condensed font-bold tracking-widest uppercase mb-8 backdrop-blur-md">
+            <div style={{ fontFamily: '"Barlow Condensed", sans-serif', textTransform: 'uppercase', letterSpacing: '0.05em' }} className="inline-flex items-center justify-center px-4 py-2 rounded-full bg-white/5 border border-white/10 text-slate-300 text-xs font-barlow-condensed font-bold tracking-widest uppercase mb-8 backdrop-blur-md">
               <MapPin className="w-4 h-4 mr-2 text-primary" />
               Service Area: {cityName}, {state}
             </div>
             
-            <h1 className="text-5xl md:text-6xl lg:text-7xl font-barlow font-black uppercase tracking-tight text-white leading-[1.1] mb-8 drop-shadow-2xl">
+            <h1 style={{ fontFamily: '"Barlow", sans-serif', textTransform: 'uppercase' }} className="text-5xl md:text-6xl lg:text-7xl font-barlow font-black uppercase tracking-tight text-white leading-[1.1] mb-8 drop-shadow-2xl">
               Commercial Refrigeration in <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-primary drop-shadow-[0_0_10px_rgba(44,69,174,0.8)] px-1">{cityName}</span>
             </h1>
             
-            <p className="text-xl md:text-2xl text-slate-300 font-inter font-light leading-relaxed mb-12 max-w-3xl mx-auto">
+            <p style={{ fontFamily: '"Inter", sans-serif' }} className="text-xl md:text-2xl text-slate-300 font-inter font-light leading-relaxed mb-12 max-w-3xl mx-auto">
               D&P Contractors provides elite walk-in cooler repair, commercial ice machine service, and heavy-duty HVAC solutions tailored for facilities across {cityName}.
             </p>
 
             <div className="flex flex-col sm:flex-row gap-6 justify-center">
               <a
-                href="tel:9037851972"
+                style={{ fontFamily: '"Barlow Condensed", sans-serif', textTransform: 'uppercase', letterSpacing: '0.05em' }} href="tel:9037851972"
                 className="inline-flex items-center justify-center px-10 py-5 text-sm md:text-base font-barlow-condensed font-bold uppercase tracking-widest text-white bg-accent rounded-xl shadow-[0_0_20px_rgba(232,2,2,0.4)] hover:shadow-[0_0_35px_rgba(232,2,2,0.6)] hover:-translate-y-1 transition-all"
               >
                 <PhoneCall className="mr-3 w-5 h-5" />
@@ -61,8 +61,8 @@ export default function CityLandingPageTemplate({ cityName, state }: CityLanding
             <div className="w-16 h-16 rounded-2xl bg-white/5 border border-white/10 flex items-center justify-center mb-8">
               <ShieldCheck className="w-8 h-8 text-white/80" />
             </div>
-            <h2 className="text-3xl font-barlow font-black uppercase tracking-tight text-white mb-6">Built For {cityName}</h2>
-            <p className="text-slate-400 text-lg font-inter font-light leading-relaxed">
+            <h2 style={{ fontFamily: '"Barlow", sans-serif', textTransform: 'uppercase' }} className="text-3xl font-barlow font-black uppercase tracking-tight text-white mb-6">Built For {cityName}</h2>
+            <p style={{ fontFamily: '"Inter", sans-serif' }} className="text-slate-400 text-lg font-inter font-light leading-relaxed">
               When your restaurant or facility in {cityName} experiences a refrigeration failure, you need a local contractor who gets it. We dispatch rapidly to {cityName}, {state} to ensure your perishable inventory is protected around the clock.
             </p>
           </motion.div>
@@ -76,8 +76,8 @@ export default function CityLandingPageTemplate({ cityName, state }: CityLanding
             <div className="w-16 h-16 rounded-2xl bg-white/5 border border-white/10 flex items-center justify-center mb-8">
               <MapPin className="w-8 h-8 text-white/80" />
             </div>
-            <h2 className="text-3xl font-barlow font-black uppercase tracking-tight text-white mb-6">Local Capabilities</h2>
-            <ul className="space-y-4 text-slate-300 text-lg font-inter font-light leading-relaxed">
+            <h2 style={{ fontFamily: '"Barlow", sans-serif', textTransform: 'uppercase' }} className="text-3xl font-barlow font-black uppercase tracking-tight text-white mb-6">Local Capabilities</h2>
+            <ul style={{ fontFamily: '"Inter", sans-serif' }} className="space-y-4 text-slate-300 text-lg font-inter font-light leading-relaxed">
               <li className="flex items-center"><span className="w-1.5 h-1.5 rounded-full bg-primary mr-3" /> Walk-in Cooler Repair & Retrofits</li>
               <li className="flex items-center"><span className="w-1.5 h-1.5 rounded-full bg-primary mr-3" /> Commercial Ice Machine Service</li>
               <li className="flex items-center"><span className="w-1.5 h-1.5 rounded-full bg-primary mr-3" /> Restaurant Hood & Ventilation</li>

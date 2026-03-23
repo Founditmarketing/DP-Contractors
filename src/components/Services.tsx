@@ -38,7 +38,7 @@ export default function Services() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         <div className="text-center max-w-3xl mx-auto mb-20">
           <motion.h2 
-            initial={{ opacity: 0, y: 20 }}
+            style={{ fontFamily: '"Barlow", sans-serif', textTransform: 'uppercase' }} initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             className="text-4xl font-barlow font-black uppercase tracking-tight text-white sm:text-5xl tracking-wider"
@@ -46,7 +46,7 @@ export default function Services() {
             Specialty <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-primary">Refrigeration</span> & HVAC
           </motion.h2>
           <motion.p 
-            initial={{ opacity: 0, y: 20 }}
+            style={{ fontFamily: '"Inter", sans-serif' }} initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ delay: 0.2 }}
@@ -86,8 +86,8 @@ export default function Services() {
                 `}>
                   <service.icon className="w-8 h-8" />
                 </div>
-                <h3 className="text-xl font-barlow-condensed font-bold uppercase tracking-widest text-white mb-4">{service.title}</h3>
-                <p className="text-slate-400 leading-relaxed text-lg font-inter font-light">
+                <h3 style={{ fontFamily: '"Barlow Condensed", sans-serif', textTransform: 'uppercase', letterSpacing: '0.05em' }} className="text-xl font-barlow-condensed font-bold uppercase tracking-widest text-white mb-4">{service.title}</h3>
+                <p style={{ fontFamily: '"Inter", sans-serif' }} className="text-slate-400 leading-relaxed text-lg font-inter font-light">
                   {service.description}
                 </p>
               </div>

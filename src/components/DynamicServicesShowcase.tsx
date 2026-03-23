@@ -84,11 +84,11 @@ export default function DynamicServicesShowcase() {
             className="inline-flex items-center justify-center p-2 bg-white/5 backdrop-blur-sm rounded-full mb-6 border border-white/10"
           >
             <Settings className="w-5 h-5 text-accent mr-2" />
-            <span className="text-white/80 font-barlow-condensed font-semibold tracking-widest uppercase text-sm">Our Capabilities</span>
+            <span style={{ fontFamily: '"Barlow Condensed", sans-serif', textTransform: 'uppercase', letterSpacing: '0.05em' }} className="text-white/80 font-barlow-condensed font-semibold tracking-widest uppercase text-sm">Our Capabilities</span>
           </motion.div>
           
           <motion.h2 
-            initial={{ opacity: 0, y: 20 }}
+            style={{ fontFamily: '"Barlow", sans-serif', textTransform: 'uppercase' }} initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ delay: 0.1 }}
@@ -125,7 +125,7 @@ export default function DynamicServicesShowcase() {
                       />
                     )}
                     
-                    <h3 className={`font-barlow-condensed font-bold uppercase tracking-wider lg:tracking-widest transition-all duration-300 text-[0.8rem] min-[375px]:text-sm sm:text-base lg:text-xl drop-shadow-md ${isActive ? 'lg:text-3xl text-white' : 'text-slate-400 group-hover:text-white'}`}>
+                    <h3 style={{ fontFamily: '"Barlow Condensed", sans-serif', textTransform: 'uppercase', letterSpacing: '0.05em' }} className={`font-barlow-condensed font-bold uppercase tracking-wider lg:tracking-widest transition-all duration-300 text-[0.8rem] min-[375px]:text-sm sm:text-base lg:text-xl drop-shadow-md ${isActive ? 'lg:text-3xl text-white' : 'text-slate-400 group-hover:text-white'}`}>
                       {service.id === 'hvac' ? (
                         <>
                           <span className="lg:hidden">Heavy-Duty<br/>HVAC</span>
@@ -167,7 +167,7 @@ export default function DynamicServicesShowcase() {
                   <ActiveIcon className="w-5 h-5 lg:w-7 lg:h-7 text-white/80" />
                 </div>
                 
-                <h3 className="text-2xl md:text-3xl lg:text-4xl font-barlow font-black text-white uppercase tracking-tight leading-tight mb-6 lg:mb-8 drop-shadow-2xl">
+                <h3 style={{ fontFamily: '"Barlow", sans-serif', textTransform: 'uppercase' }} className="text-2xl md:text-3xl lg:text-4xl font-barlow font-black text-white uppercase tracking-tight leading-tight mb-6 lg:mb-8 drop-shadow-2xl">
                   {activeService.headline}
                 </h3>
                 
@@ -181,13 +181,13 @@ export default function DynamicServicesShowcase() {
                       className="flex items-start"
                     >
                       <CheckCircle2 className="w-5 h-5 text-primary mt-0.5 mr-4 flex-shrink-0 opacity-80" />
-                      <span className="font-inter text-slate-300 text-lg leading-snug">{bullet}</span>
+                      <span style={{ fontFamily: '"Inter", sans-serif' }} className="font-inter text-slate-300 text-lg leading-snug">{bullet}</span>
                     </motion.li>
                   ))}
                 </ul>
 
                 <motion.a
-                  initial={{ opacity: 0, y: 10 }}
+                  style={{ fontFamily: '"Barlow Condensed", sans-serif', textTransform: 'uppercase', letterSpacing: '0.05em' }} initial={{ opacity: 0, y: 10 }}
                   animate={{ opacity: 1, y: 0 }}
                   transition={{ delay: 0.4 }}
                   href="tel:9037851972"
