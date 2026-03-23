@@ -38,7 +38,7 @@
 
 .custom-barlow-title, h1, h2, h3, h4, h5, h6 {
   font-family: 'Inter', sans-serif !important;
-  font-weight: 800 !important; /* Makes it thick and authoritative */
+  font-weight: 500 !important; /* Matches thinner local fallback weight */
   text-transform: uppercase !important;
   letter-spacing: -0.02em !important; /* Tight spacing for a premium look */
 }
