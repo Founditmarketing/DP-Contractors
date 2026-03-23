@@ -35,20 +35,3 @@
   80% { transform: translate(1px, -1px); }
   100% { transform: translate(0); }
 }
-
-/* BRUTE FORCE FONT OVERRIDE - V2 (FIXED MENU & TITLES) */
-
-/* 1. All Major Titles, Headings, and Tailwind Classes */
-h1, h2, h3, h5, h6, .font-barlow, [class*="font-barlow"] {
-    font-family: 'Barlow', sans-serif !important;
-}
-
-/* 2. Navigation Menu, Buttons, and Subtitles */
-nav, nav a, nav span, header a, button, .font-barlow-condensed, [class*="font-barlow-condensed"] {
-    font-family: 'Barlow Condensed', sans-serif !important;
-}
-
-/* 3. Standard Body Text (Paragraphs, Inputs, and specific Inter classes) */
-p, input, textarea, .font-inter {
-    font-family: 'Inter', sans-serif !important;
-}

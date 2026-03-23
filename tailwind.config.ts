@@ -10,6 +10,7 @@ export default {
         barlow: ['"Barlow"', 'sans-serif'],
         'barlow-condensed': ['"Barlow Condensed"', 'sans-serif'],
         inter: ['"Inter"', 'sans-serif'],
+        sans: ['"Inter"', 'sans-serif'],
       },
     },
   },
