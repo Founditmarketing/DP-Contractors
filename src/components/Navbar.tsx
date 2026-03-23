@@ -43,14 +43,14 @@ export default function Navbar() {
           : 'glass-nav py-2 border border-white/10 md:border-transparent'}`}
     >
       <div className="w-full px-4 sm:px-6 lg:px-8">
-        <div className={`flex justify-between items-center transition-[min-height] duration-500 ease-in-out ${isScrolled ? 'min-h-[4rem] md:min-h-[4.5rem]' : 'min-h-[5.5rem]'}`}>
+        <div className={`flex justify-between items-center transition-[min-height] duration-500 ease-in-out ${isScrolled ? 'min-h-[3.5rem] md:min-h-[4.5rem]' : 'min-h-[4.5rem] md:min-h-[5.5rem]'}`}>
           {/* Logo */}
           <div className="flex-shrink-0 flex items-center">
             <Link to="/" className="flex items-center gap-3">
               <img 
                 src="/New D&P logo-2.png" 
                 alt="D&P Contractors Logo" 
-                className={`w-auto object-contain transition-all duration-500 ease-in-out ${isScrolled ? 'h-10 sm:h-12' : 'h-16 sm:h-20'}`} 
+                className={`w-auto object-contain transition-all duration-500 ease-in-out ${isScrolled ? 'h-8 sm:h-12' : 'h-12 sm:h-20'}`} 
               />
             </Link>
           </div>
