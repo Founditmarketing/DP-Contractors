@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700&family=Barlow:wght@800;900&family=Inter:wght@400;500&display=swap');
 @import "tailwindcss";
 @config "../tailwind.config.ts";
 
@@ -33,4 +34,17 @@
   60% { transform: translate(1px, 1px); }
   80% { transform: translate(1px, -1px); }
   100% { transform: translate(0); }
+}
+
+/* BRUTE FORCE FONT OVERRIDE FOR VERCEL BUILD */
+h1, h2, .font-barlow {
+    font-family: 'Barlow', sans-serif !important;
+}
+
+h3, h4, .font-barlow-condensed {
+    font-family: 'Barlow Condensed', sans-serif !important;
+}
+
+p, a, span, input, button, .font-inter {
+    font-family: 'Inter', sans-serif !important;
 }
