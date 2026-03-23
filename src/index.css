@@ -7,10 +7,10 @@
 
 @layer utilities {
   .font-barlow {
-    font-family: "Barlow", sans-serif !important;
+    font-family: "Oswald", sans-serif !important;
   }
   .font-barlow-condensed {
-    font-family: "Barlow Condensed", sans-serif !important;
+    font-family: "Oswald", sans-serif !important;
   }
   .font-inter {
     font-family: "Inter", sans-serif !important;
