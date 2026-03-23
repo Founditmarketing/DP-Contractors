@@ -38,6 +38,9 @@ export default function Hero() {
   return (
     <section id="home" className="relative min-h-screen flex items-center justify-center pt-20 overflow-hidden">
       <HeroIceBackground />
+      
+      {/* Subtle Dark Overlay Exclusively for Mobile Visibility */}
+      <div className="absolute inset-0 bg-slate-950/50 md:hidden z-[1] pointer-events-none"></div>
 
       {!loadingComplete && <LoadingScreen onComplete={handleLoadComplete} />}
 
