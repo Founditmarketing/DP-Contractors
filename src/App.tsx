@@ -4,6 +4,7 @@
  */
 
 import { BrowserRouter as Router, Routes, Route, useParams, useLocation } from 'react-router-dom';
+import { useEffect } from 'react';
 import Navbar from './components/Navbar';
 import Hero from './components/Hero';
 import Ticker from './components/Ticker';
@@ -112,6 +113,10 @@ function ServicePageWrapper() {
 function AppContent() {
   const location = useLocation();
   const isContactPage = location.pathname === '/contact';
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [location.pathname]);
 
   return (
     <div className="min-h-screen bg-slate-950 font-inter selection:bg-primary/30 selection:text-white">
