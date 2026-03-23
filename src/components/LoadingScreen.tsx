@@ -79,7 +79,7 @@ export default function LoadingScreen({ onComplete }: LoadingScreenProps) {
       <div className={`text-center relative z-10 transition-all duration-700 w-full max-w-sm px-6 ${
         phase === 'dissolving' ? 'opacity-0 translate-y-4' : 'opacity-100 translate-y-0'
       }`}>
-        <h2 style={{ fontFamily: '"Inter", sans-serif' }} className="text-xs md:text-sm font-inter font-light text-white/80 tracking-[0.4em] uppercase mb-5">
+        <h2 className="text-xs md:text-sm font-inter font-light text-white/80 tracking-[0.4em] uppercase mb-5">
           System Initialization
         </h2>
         
@@ -103,7 +103,7 @@ export default function LoadingScreen({ onComplete }: LoadingScreenProps) {
           <div className={`w-1.5 h-1.5 rounded-full transition-colors duration-1000 shadow-[0_0_10px_currentColor] ${
             phase === 'idle' ? 'bg-accent animate-pulse' : 'bg-blue-400'
           }`}></div>
-          <p style={{ fontFamily: '"Inter", sans-serif' }} className="text-white/40 font-inter text-[10px] md:text-[11px] tracking-[0.2em] uppercase">
+          <p className="text-white/40 font-inter text-[10px] md:text-[11px] tracking-[0.2em] uppercase">
             {phase === 'idle' ? 'Thermostatic diagnostics' : 'Engaging elite cooling protocol'}
           </p>
         </div>

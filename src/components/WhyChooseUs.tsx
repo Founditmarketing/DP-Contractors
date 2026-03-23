@@ -70,8 +70,8 @@ export default function WhyChooseUs() {
             />
             <div className="absolute bottom-6 left-6 right-6 z-20">
               <div className="bg-slate-900/80 backdrop-blur-md p-6 rounded-xl border border-slate-700">
-                <p style={{ fontFamily: '"Inter", sans-serif' }} className="text-white font-inter font-light text-xl">"When the walk-in goes down, we step up."</p>
-                <p style={{ fontFamily: '"Barlow Condensed", sans-serif', textTransform: 'uppercase', letterSpacing: '0.05em' }} className="text-primary font-barlow-condensed font-semibold mt-2 uppercase tracking-widest text-xs">D&P Contractors Guarantee</p>
+                <p className="text-white font-inter font-light text-xl">"When the walk-in goes down, we step up."</p>
+                <p className="text-primary font-barlow-condensed font-semibold mt-2 uppercase tracking-widest text-xs">D&P Contractors Guarantee</p>
               </div>
             </div>
           </motion.div>
@@ -84,10 +84,10 @@ export default function WhyChooseUs() {
               viewport={{ once: true }}
               transition={{ duration: 0.6 }}
             >
-              <h2 style={{ fontFamily: '"Barlow", sans-serif', textTransform: 'uppercase' }} className="text-3xl sm:text-4xl font-barlow font-black uppercase tracking-tight text-white mb-4 tracking-wider">
+              <h2 className="text-3xl sm:text-4xl font-barlow font-black uppercase tracking-tight text-white mb-4 tracking-wider">
                 Why Choose <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-primary">D&P</span>
               </h2>
-              <p style={{ fontFamily: '"Inter", sans-serif' }} className="text-lg text-slate-400 mb-10 leading-relaxed font-inter font-light">
+              <p className="text-lg text-slate-400 mb-10 leading-relaxed font-inter font-light">
                 We understand the unique demands of commercial facilities. Our team is built on a foundation of technical mastery and unwavering reliability.
               </p>
             </motion.div>
@@ -117,10 +117,10 @@ export default function WhyChooseUs() {
                       </div>
                     </div>
                     <div>
-                      <h3 style={{ fontFamily: '"Barlow Condensed", sans-serif', textTransform: 'uppercase', letterSpacing: '0.05em' }} className="text-sm font-barlow-condensed font-bold uppercase tracking-widest text-white mb-2 group-hover:text-blue-100 transition-colors duration-300">
+                      <h3 className="text-sm font-barlow-condensed font-bold uppercase tracking-widest text-white mb-2 group-hover:text-blue-100 transition-colors duration-300">
                         {factor.title}
                       </h3>
-                      <p style={{ fontFamily: '"Inter", sans-serif' }} className="text-slate-400 leading-relaxed font-inter font-light">
+                      <p className="text-slate-400 leading-relaxed font-inter font-light">
                         {factor.description}
                       </p>
                     </div>

@@ -57,8 +57,8 @@ export default function Navbar() {
 
           {/* Desktop Menu */}
           <div className="hidden md:flex items-center space-x-8">
-            <Link style={{ fontFamily: '"Barlow Condensed", sans-serif', textTransform: 'uppercase', letterSpacing: '0.05em' }} to="/" className="text-white/90 hover:text-white font-barlow-condensed font-semibold uppercase tracking-widest text-sm transition-colors">Home</Link>
-            <Link style={{ fontFamily: '"Barlow Condensed", sans-serif', textTransform: 'uppercase', letterSpacing: '0.05em' }} to="/about" className="text-white/90 hover:text-white font-barlow-condensed font-semibold uppercase tracking-widest text-sm transition-colors">About Us</Link>
+            <Link to="/" className="text-white/90 hover:text-white font-barlow-condensed font-semibold uppercase tracking-widest text-sm transition-colors">Home</Link>
+            <Link to="/about" className="text-white/90 hover:text-white font-barlow-condensed font-semibold uppercase tracking-widest text-sm transition-colors">About Us</Link>
             
             {/* Services Dropdown */}
             <div
@@ -66,7 +66,7 @@ export default function Navbar() {
               onMouseEnter={() => setShowServicesDropdown(true)}
               onMouseLeave={() => setShowServicesDropdown(false)}
             >
-              <button style={{ fontFamily: '"Barlow Condensed", sans-serif', textTransform: 'uppercase', letterSpacing: '0.05em' }} className="flex items-center text-white/90 hover:text-white font-barlow-condensed font-semibold uppercase tracking-widest text-sm transition-colors py-2">
+              <button className="flex items-center text-white/90 hover:text-white font-barlow-condensed font-semibold uppercase tracking-widest text-sm transition-colors py-2">
                 Services <ChevronDown className="ml-1 w-4 h-4" />
               </button>
 
@@ -83,8 +83,8 @@ export default function Navbar() {
                           <Snowflake className="w-5 h-5 text-slate-400 group-hover:text-primary transition-colors" />
                         </div>
                         <div>
-                          <h4 style={{ fontFamily: '"Barlow Condensed", sans-serif', textTransform: 'uppercase', letterSpacing: '0.05em' }} className="text-sm font-barlow-condensed font-bold uppercase tracking-widest text-white mb-1 group-hover:text-primary transition-colors">Walk-In Coolers</h4>
-                          <p style={{ fontFamily: '"Inter", sans-serif' }} className="text-xs text-slate-400 font-inter font-light leading-relaxed">Commercial refrigeration repair & install</p>
+                          <h4 className="text-sm font-barlow-condensed font-bold uppercase tracking-widest text-white mb-1 group-hover:text-primary transition-colors">Walk-In Coolers</h4>
+                          <p className="text-xs text-slate-400 font-inter font-light leading-relaxed">Commercial refrigeration repair & install</p>
                         </div>
                       </Link>
                       <Link to="/services/ice-machines" onClick={() => setShowServicesDropdown(false)} className="group flex items-start p-3 rounded-lg hover:bg-slate-800 transition-colors border border-transparent hover:border-slate-700">
@@ -92,8 +92,8 @@ export default function Navbar() {
                           <Droplets className="w-5 h-5 text-slate-400 group-hover:text-primary transition-colors" />
                         </div>
                         <div>
-                          <h4 style={{ fontFamily: '"Barlow Condensed", sans-serif', textTransform: 'uppercase', letterSpacing: '0.05em' }} className="text-sm font-barlow-condensed font-bold uppercase tracking-widest text-white mb-1 group-hover:text-primary transition-colors">Ice Machines</h4>
-                          <p style={{ fontFamily: '"Inter", sans-serif' }} className="text-xs text-slate-400 font-inter font-light leading-relaxed">High-volume descaling & servicing</p>
+                          <h4 className="text-sm font-barlow-condensed font-bold uppercase tracking-widest text-white mb-1 group-hover:text-primary transition-colors">Ice Machines</h4>
+                          <p className="text-xs text-slate-400 font-inter font-light leading-relaxed">High-volume descaling & servicing</p>
                         </div>
                       </Link>
                       <Link to="/services/restaurant-ventilation" onClick={() => setShowServicesDropdown(false)} className="group flex items-start p-3 rounded-lg hover:bg-slate-800 transition-colors border border-transparent hover:border-slate-700">
@@ -101,8 +101,8 @@ export default function Navbar() {
                           <Wind className="w-5 h-5 text-slate-400 group-hover:text-primary transition-colors" />
                         </div>
                         <div>
-                          <h4 style={{ fontFamily: '"Barlow Condensed", sans-serif', textTransform: 'uppercase', letterSpacing: '0.05em' }} className="text-sm font-barlow-condensed font-bold uppercase tracking-widest text-white mb-1 group-hover:text-primary transition-colors">Restaurant Ventilation</h4>
-                          <p style={{ fontFamily: '"Inter", sans-serif' }} className="text-xs text-slate-400 font-inter font-light leading-relaxed">Grease hood & exhaust systems</p>
+                          <h4 className="text-sm font-barlow-condensed font-bold uppercase tracking-widest text-white mb-1 group-hover:text-primary transition-colors">Restaurant Ventilation</h4>
+                          <p className="text-xs text-slate-400 font-inter font-light leading-relaxed">Grease hood & exhaust systems</p>
                         </div>
                       </Link>
                       <Link to="/services/heavy-duty-hvac" onClick={() => setShowServicesDropdown(false)} className="group flex items-start p-3 rounded-lg hover:bg-slate-800 transition-colors border border-transparent hover:border-slate-700">
@@ -110,8 +110,8 @@ export default function Navbar() {
                           <Wrench className="w-5 h-5 text-slate-400 group-hover:text-primary transition-colors" />
                         </div>
                         <div>
-                          <h4 style={{ fontFamily: '"Barlow Condensed", sans-serif', textTransform: 'uppercase', letterSpacing: '0.05em' }} className="text-sm font-barlow-condensed font-bold uppercase tracking-widest text-white mb-1 group-hover:text-primary transition-colors">Heavy-Duty HVAC</h4>
-                          <p style={{ fontFamily: '"Inter", sans-serif' }} className="text-xs text-slate-400 font-inter font-light leading-relaxed">Industrial-scale climate control</p>
+                          <h4 className="text-sm font-barlow-condensed font-bold uppercase tracking-widest text-white mb-1 group-hover:text-primary transition-colors">Heavy-Duty HVAC</h4>
+                          <p className="text-xs text-slate-400 font-inter font-light leading-relaxed">Industrial-scale climate control</p>
                         </div>
                       </Link>
                     </div>
@@ -126,7 +126,7 @@ export default function Navbar() {
               onMouseEnter={() => setShowDropdown(true)}
               onMouseLeave={() => setShowDropdown(false)}
             >
-              <button style={{ fontFamily: '"Barlow Condensed", sans-serif', textTransform: 'uppercase', letterSpacing: '0.05em' }} className="flex items-center text-white/90 hover:text-white font-barlow-condensed font-semibold uppercase tracking-widest text-sm transition-colors py-2">
+              <button className="flex items-center text-white/90 hover:text-white font-barlow-condensed font-semibold uppercase tracking-widest text-sm transition-colors py-2">
                 Service Areas <ChevronDown className="ml-1 w-4 h-4" />
               </button>
 
@@ -137,7 +137,7 @@ export default function Navbar() {
                   className="absolute top-full left-0 pt-4 w-[400px] z-50"
                 >
                   <div className="bg-slate-900 border border-slate-700 rounded-xl shadow-2xl p-4 overflow-hidden">
-                    <p style={{ fontFamily: '"Barlow Condensed", sans-serif', textTransform: 'uppercase', letterSpacing: '0.05em' }} className="text-[10px] font-barlow-condensed font-bold uppercase tracking-[0.2em] text-slate-500 mb-3 ml-2 border-b border-white/5 pb-2">Regional Dispatch Zones</p>
+                    <p className="text-[10px] font-barlow-condensed font-bold uppercase tracking-[0.2em] text-slate-500 mb-3 ml-2 border-b border-white/5 pb-2">Regional Dispatch Zones</p>
                     <div className="grid grid-cols-2 gap-2">
                       {serviceAreas.map(area => (
                         <Link key={area.slug} to={`/service-areas/${area.slug}`} onClick={() => setShowDropdown(false)} className="flex items-center p-2 rounded-lg text-xs text-slate-300 hover:bg-slate-800 hover:text-white transition-colors border border-transparent hover:border-slate-700 font-barlow-condensed uppercase tracking-widest group">
@@ -151,10 +151,10 @@ export default function Navbar() {
               )}
             </div>
 
-            <Link style={{ fontFamily: '"Barlow Condensed", sans-serif', textTransform: 'uppercase', letterSpacing: '0.05em' }} to="/contact" className="text-white/90 hover:text-white font-barlow-condensed font-semibold uppercase tracking-widest text-sm transition-colors">Contact</Link>
+            <Link to="/contact" className="text-white/90 hover:text-white font-barlow-condensed font-semibold uppercase tracking-widest text-sm transition-colors">Contact</Link>
 
             <a
-              style={{ fontFamily: '"Barlow Condensed", sans-serif', textTransform: 'uppercase', letterSpacing: '0.05em' }} href="tel:9037851972"
+              href="tel:9037851972"
               className="flex items-center bg-accent text-white px-6 py-2.5 rounded-md font-barlow-condensed font-bold uppercase tracking-widest text-xs hover:bg-red-600 transition-all shadow-md hover:shadow-lg hover:-translate-y-0.5"
             >
               <Phone className="w-4 h-4 mr-2" />
@@ -187,7 +187,7 @@ export default function Navbar() {
             <Link to="/about" onClick={() => setIsOpen(false)} className="block px-3 py-3 text-sm font-barlow-condensed font-semibold uppercase tracking-widest text-white hover:bg-slate-800 rounded-md">About Us</Link>
             
             <div className="px-3 py-2">
-              <p style={{ fontFamily: '"Barlow Condensed", sans-serif', textTransform: 'uppercase', letterSpacing: '0.05em' }} className="text-xs font-barlow-condensed font-bold text-slate-500 uppercase tracking-widest mb-2">Services</p>
+              <p className="text-xs font-barlow-condensed font-bold text-slate-500 uppercase tracking-widest mb-2">Services</p>
               <div className="pl-3 space-y-2 border-l-2 border-primary/30 ml-2">
                 <Link to="/services/walk-in-coolers" onClick={() => setIsOpen(false)} className="block text-xs font-barlow-condensed uppercase tracking-widest text-slate-300 hover:text-white">Walk-In Coolers</Link>
                 <Link to="/services/ice-machines" onClick={() => setIsOpen(false)} className="block text-xs font-barlow-condensed uppercase tracking-widest text-slate-300 hover:text-white">Ice Machines</Link>
@@ -196,7 +196,7 @@ export default function Navbar() {
               </div>
             </div>
             <div className="px-3 py-2">
-              <p style={{ fontFamily: '"Barlow Condensed", sans-serif', textTransform: 'uppercase', letterSpacing: '0.05em' }} className="text-xs font-barlow-condensed font-bold text-slate-500 uppercase tracking-widest mb-2">Service Areas</p>
+              <p className="text-xs font-barlow-condensed font-bold text-slate-500 uppercase tracking-widest mb-2">Service Areas</p>
               <div className="grid grid-cols-2 gap-2">
                 {serviceAreas.map(area => (
                   <Link key={area.slug} to={`/service-areas/${area.slug}`} onClick={() => setIsOpen(false)} className="text-xs font-barlow-condensed uppercase tracking-widest text-slate-300 hover:text-white flex items-center">
@@ -207,7 +207,7 @@ export default function Navbar() {
             </div>
             <Link to="/contact" onClick={() => setIsOpen(false)} className="block px-3 py-3 text-sm font-barlow-condensed font-semibold uppercase tracking-widest text-white hover:bg-slate-800 rounded-md">Contact</Link>
             <a
-              style={{ fontFamily: '"Barlow Condensed", sans-serif', textTransform: 'uppercase', letterSpacing: '0.05em' }} href="tel:9037851972"
+              href="tel:9037851972"
               className="flex items-center w-full mt-4 bg-accent text-white px-4 py-4 rounded-md font-barlow-condensed font-bold uppercase tracking-widest text-xs justify-center shadow-md active:scale-95 transition-transform"
             >
               <Phone className="w-5 h-5 mr-2" />

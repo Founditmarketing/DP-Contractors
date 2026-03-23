@@ -35,3 +35,28 @@
   80% { transform: translate(1px, -1px); }
   100% { transform: translate(0); }
 }
+
+/* --- GLOBAL TYPOGRAPHY RESET --- */
+
+/* 1. All Major Headings -> Barlow */
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Barlow', sans-serif !important;
+    text-transform: uppercase;
+}
+
+/* 2. Navigation, Buttons, and specific UI elements -> Barlow Condensed */
+nav, nav a, header a, button, .city-badge, .nav-link {
+    font-family: 'Barlow Condensed', sans-serif !important;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+}
+
+/* 3. All standard text, paragraphs, and inputs -> Inter */
+body, p, span, a, input, textarea, li {
+    font-family: 'Inter', sans-serif !important;
+}
+
+/* Exception: Don't let the Inter 'span' rule override the Nav links */
+nav span, button span {
+    font-family: 'Barlow Condensed', sans-serif !important;
+}

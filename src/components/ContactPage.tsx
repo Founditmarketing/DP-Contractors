@@ -22,14 +22,14 @@ export default function ContactPage() {
           animate={{ opacity: 1, y: 0 }}
           className="text-center max-w-4xl mx-auto mb-16 lg:mb-24"
         >
-          <div style={{ fontFamily: '"Barlow Condensed", sans-serif', textTransform: 'uppercase', letterSpacing: '0.05em' }} className="inline-flex items-center justify-center px-4 py-2 rounded-full bg-white/5 border border-white/10 text-slate-300 text-xs font-barlow-condensed font-bold tracking-widest uppercase mb-6 backdrop-blur-md">
+          <div className="inline-flex items-center justify-center px-4 py-2 rounded-full bg-white/5 border border-white/10 text-slate-300 text-xs font-barlow-condensed font-bold tracking-widest uppercase mb-6 backdrop-blur-md">
             <PhoneCall className="w-4 h-4 mr-2 text-primary" />
             24/7 Dispatch Available
           </div>
-          <h1 style={{ fontFamily: '"Barlow", sans-serif', textTransform: 'uppercase' }} className="text-5xl md:text-6xl lg:text-7xl font-barlow font-black uppercase tracking-tight text-white leading-[1.1] mb-6 drop-shadow-2xl">
+          <h1 className="text-5xl md:text-6xl lg:text-7xl font-barlow font-black uppercase tracking-tight text-white leading-[1.1] mb-6 drop-shadow-2xl">
             Contact <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-primary">D&P Contractors</span>
           </h1>
-          <p style={{ fontFamily: '"Inter", sans-serif' }} className="text-xl text-slate-300 font-inter font-light leading-relaxed">
+          <p className="text-xl text-slate-300 font-inter font-light leading-relaxed">
             Need emergency refrigeration repair or a quote for a commercial HVAC installation? Our dispatchers are standing by.
           </p>
         </motion.div>
@@ -49,11 +49,11 @@ export default function ContactPage() {
                 <PhoneCall className="w-24 h-24 text-accent" />
               </div>
               <div className="relative z-10">
-                <h3 style={{ fontFamily: '"Barlow Condensed", sans-serif', textTransform: 'uppercase', letterSpacing: '0.05em' }} className="text-sm font-barlow-condensed font-bold tracking-widest uppercase text-slate-400 mb-2">Emergency Dispatch</h3>
-                <a style={{ fontFamily: '"Barlow", sans-serif', textTransform: 'uppercase' }} href="tel:9037851972" className="text-4xl sm:text-5xl font-barlow font-black text-white tracking-widest hover:text-accent transition-colors block mb-4">
+                <h3 className="text-sm font-barlow-condensed font-bold tracking-widest uppercase text-slate-400 mb-2">Emergency Dispatch</h3>
+                <a href="tel:9037851972" className="text-4xl sm:text-5xl font-barlow font-black text-white tracking-widest hover:text-accent transition-colors block mb-4">
                   (903) 785-1972
                 </a>
-                <p style={{ fontFamily: '"Inter", sans-serif' }} className="text-slate-400 font-inter font-light text-sm">Tap to call our 24/7 designated emergency line.</p>
+                <p className="text-slate-400 font-inter font-light text-sm">Tap to call our 24/7 designated emergency line.</p>
               </div>
             </div>
 
@@ -61,13 +61,13 @@ export default function ContactPage() {
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
               <div className="bg-white/5 border border-white/5 rounded-2xl p-6">
                 <Mail className="w-8 h-8 text-primary mb-4" />
-                <h3 style={{ fontFamily: '"Barlow Condensed", sans-serif', textTransform: 'uppercase', letterSpacing: '0.05em' }} className="text-xs font-barlow-condensed font-bold tracking-widest uppercase text-slate-400 mb-1">Email Us</h3>
-                <p style={{ fontFamily: '"Inter", sans-serif' }} className="text-white font-inter text-sm break-all">service@dpcontractorstx.com</p>
+                <h3 className="text-xs font-barlow-condensed font-bold tracking-widest uppercase text-slate-400 mb-1">Email Us</h3>
+                <p className="text-white font-inter text-sm break-all">service@dpcontractorstx.com</p>
               </div>
               <div className="bg-white/5 border border-white/5 rounded-2xl p-6">
                 <MapPin className="w-8 h-8 text-primary mb-4" />
-                <h3 style={{ fontFamily: '"Barlow Condensed", sans-serif', textTransform: 'uppercase', letterSpacing: '0.05em' }} className="text-xs font-barlow-condensed font-bold tracking-widest uppercase text-slate-400 mb-1">Headquarters</h3>
-                <p style={{ fontFamily: '"Inter", sans-serif' }} className="text-white font-inter text-sm">123 Industrial Blvd<br />Paris, TX 75460</p>
+                <h3 className="text-xs font-barlow-condensed font-bold tracking-widest uppercase text-slate-400 mb-1">Headquarters</h3>
+                <p className="text-white font-inter text-sm">123 Industrial Blvd<br />Paris, TX 75460</p>
               </div>
             </div>
 
@@ -76,15 +76,15 @@ export default function ContactPage() {
               <div className="flex items-center">
                 <Clock className="w-6 h-6 text-primary mr-3" />
                 <div>
-                  <h3 style={{ fontFamily: '"Barlow Condensed", sans-serif', textTransform: 'uppercase', letterSpacing: '0.05em' }} className="text-xs font-barlow-condensed font-bold tracking-widest uppercase text-slate-400">Regular Hours</h3>
-                  <p style={{ fontFamily: '"Inter", sans-serif' }} className="text-white font-inter text-sm">Mon-Fri: 8AM - 5PM</p>
+                  <h3 className="text-xs font-barlow-condensed font-bold tracking-widest uppercase text-slate-400">Regular Hours</h3>
+                  <p className="text-white font-inter text-sm">Mon-Fri: 8AM - 5PM</p>
                 </div>
               </div>
               <div className="flex items-center">
                 <ShieldCheck className="w-6 h-6 text-accent mr-3" />
                 <div>
-                  <h3 style={{ fontFamily: '"Barlow Condensed", sans-serif', textTransform: 'uppercase', letterSpacing: '0.05em' }} className="text-xs font-barlow-condensed font-bold tracking-widest uppercase text-slate-400">After Hours</h3>
-                  <p style={{ fontFamily: '"Inter", sans-serif' }} className="text-white font-inter text-sm flex items-center"><span className="w-2 h-2 rounded-full bg-accent animate-ping mr-2"></span>24/7 Standby</p>
+                  <h3 className="text-xs font-barlow-condensed font-bold tracking-widest uppercase text-slate-400">After Hours</h3>
+                  <p className="text-white font-inter text-sm flex items-center"><span className="w-2 h-2 rounded-full bg-accent animate-ping mr-2"></span>24/7 Standby</p>
                 </div>
               </div>
             </div>
@@ -101,36 +101,36 @@ export default function ContactPage() {
               {/* Subtle top glare */}
               <div className="absolute top-0 left-1/4 right-1/4 h-[1px] bg-gradient-to-r from-transparent via-primary to-transparent opacity-50"></div>
               
-              <h3 style={{ fontFamily: '"Barlow", sans-serif', textTransform: 'uppercase' }} className="text-3xl font-barlow font-black uppercase tracking-tight text-white mb-2">Request Service</h3>
-              <p style={{ fontFamily: '"Inter", sans-serif' }} className="text-slate-400 font-inter font-light text-sm mb-8">Fill out the form below and our dispatcher will contact you shortly.</p>
+              <h3 className="text-3xl font-barlow font-black uppercase tracking-tight text-white mb-2">Request Service</h3>
+              <p className="text-slate-400 font-inter font-light text-sm mb-8">Fill out the form below and our dispatcher will contact you shortly.</p>
 
               <form className="space-y-6" onSubmit={(e) => e.preventDefault()}>
                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
                   <div className="space-y-2">
-                    <label style={{ fontFamily: '"Barlow Condensed", sans-serif', textTransform: 'uppercase', letterSpacing: '0.05em' }} className="text-xs font-barlow-condensed font-bold tracking-widest uppercase text-slate-400">First Name</label>
-                    <input style={{ fontFamily: '"Inter", sans-serif' }} type="text" className="w-full bg-black/50 border border-white/10 rounded-lg px-4 py-3 text-white font-inter focus:outline-none focus:border-primary transition-colors placeholder:text-slate-600" placeholder="John" />
+                    <label className="text-xs font-barlow-condensed font-bold tracking-widest uppercase text-slate-400">First Name</label>
+                    <input type="text" className="w-full bg-black/50 border border-white/10 rounded-lg px-4 py-3 text-white font-inter focus:outline-none focus:border-primary transition-colors placeholder:text-slate-600" placeholder="John" />
                   </div>
                   <div className="space-y-2">
-                    <label style={{ fontFamily: '"Barlow Condensed", sans-serif', textTransform: 'uppercase', letterSpacing: '0.05em' }} className="text-xs font-barlow-condensed font-bold tracking-widest uppercase text-slate-400">Last Name</label>
-                    <input style={{ fontFamily: '"Inter", sans-serif' }} type="text" className="w-full bg-black/50 border border-white/10 rounded-lg px-4 py-3 text-white font-inter focus:outline-none focus:border-primary transition-colors placeholder:text-slate-600" placeholder="Smith" />
+                    <label className="text-xs font-barlow-condensed font-bold tracking-widest uppercase text-slate-400">Last Name</label>
+                    <input type="text" className="w-full bg-black/50 border border-white/10 rounded-lg px-4 py-3 text-white font-inter focus:outline-none focus:border-primary transition-colors placeholder:text-slate-600" placeholder="Smith" />
                   </div>
                 </div>
 
                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
                   <div className="space-y-2">
-                    <label style={{ fontFamily: '"Barlow Condensed", sans-serif', textTransform: 'uppercase', letterSpacing: '0.05em' }} className="text-xs font-barlow-condensed font-bold tracking-widest uppercase text-slate-400">Phone</label>
-                    <input style={{ fontFamily: '"Inter", sans-serif' }} type="tel" className="w-full bg-black/50 border border-white/10 rounded-lg px-4 py-3 text-white font-inter focus:outline-none focus:border-primary transition-colors placeholder:text-slate-600" placeholder="(555) 123-4567" />
+                    <label className="text-xs font-barlow-condensed font-bold tracking-widest uppercase text-slate-400">Phone</label>
+                    <input type="tel" className="w-full bg-black/50 border border-white/10 rounded-lg px-4 py-3 text-white font-inter focus:outline-none focus:border-primary transition-colors placeholder:text-slate-600" placeholder="(555) 123-4567" />
                   </div>
                   <div className="space-y-2">
-                    <label style={{ fontFamily: '"Barlow Condensed", sans-serif', textTransform: 'uppercase', letterSpacing: '0.05em' }} className="text-xs font-barlow-condensed font-bold tracking-widest uppercase text-slate-400">Facility / Business Name</label>
-                    <input style={{ fontFamily: '"Inter", sans-serif' }} type="text" className="w-full bg-black/50 border border-white/10 rounded-lg px-4 py-3 text-white font-inter focus:outline-none focus:border-primary transition-colors placeholder:text-slate-600" placeholder="Optional" />
+                    <label className="text-xs font-barlow-condensed font-bold tracking-widest uppercase text-slate-400">Facility / Business Name</label>
+                    <input type="text" className="w-full bg-black/50 border border-white/10 rounded-lg px-4 py-3 text-white font-inter focus:outline-none focus:border-primary transition-colors placeholder:text-slate-600" placeholder="Optional" />
                   </div>
                 </div>
 
                 <div className="space-y-2">
-                  <label style={{ fontFamily: '"Barlow Condensed", sans-serif', textTransform: 'uppercase', letterSpacing: '0.05em' }} className="text-xs font-barlow-condensed font-bold tracking-widest uppercase text-slate-400">Service Required</label>
+                  <label className="text-xs font-barlow-condensed font-bold tracking-widest uppercase text-slate-400">Service Required</label>
                   <div className="relative">
-                    <select style={{ fontFamily: '"Inter", sans-serif' }} className="w-full bg-black/50 border border-white/10 rounded-lg px-4 py-3 text-white font-inter focus:outline-none focus:border-primary transition-colors appearance-none cursor-pointer" defaultValue="">
+                    <select className="w-full bg-black/50 border border-white/10 rounded-lg px-4 py-3 text-white font-inter focus:outline-none focus:border-primary transition-colors appearance-none cursor-pointer" defaultValue="">
                       <option value="" disabled>Select a Service</option>
                       <option value="emergency">24/7 Emergency Repair</option>
                       <option value="walk-in-coolers">Walk-In Coolers & Freezers</option>
@@ -146,11 +146,11 @@ export default function ContactPage() {
                 </div>
 
                 <div className="space-y-2">
-                  <label style={{ fontFamily: '"Barlow Condensed", sans-serif', textTransform: 'uppercase', letterSpacing: '0.05em' }} className="text-xs font-barlow-condensed font-bold tracking-widest uppercase text-slate-400">How can we help?</label>
-                  <textarea style={{ fontFamily: '"Inter", sans-serif' }} rows={4} className="w-full bg-black/50 border border-white/10 rounded-lg px-4 py-3 text-white font-inter focus:outline-none focus:border-primary transition-colors placeholder:text-slate-600 resize-none" placeholder="Describe your refrigeration or HVAC issue..."></textarea>
+                  <label className="text-xs font-barlow-condensed font-bold tracking-widest uppercase text-slate-400">How can we help?</label>
+                  <textarea rows={4} className="w-full bg-black/50 border border-white/10 rounded-lg px-4 py-3 text-white font-inter focus:outline-none focus:border-primary transition-colors placeholder:text-slate-600 resize-none" placeholder="Describe your refrigeration or HVAC issue..."></textarea>
                 </div>
 
-                <button style={{ fontFamily: '"Barlow Condensed", sans-serif', textTransform: 'uppercase', letterSpacing: '0.05em' }} type="submit" className="w-full sm:w-auto inline-flex items-center justify-center px-10 py-4 font-barlow-condensed font-bold uppercase tracking-widest text-white bg-primary rounded-lg transition-all shadow-[0_0_20px_rgba(44,69,174,0.3)] hover:shadow-[0_0_35px_rgba(44,69,174,0.6)] hover:-translate-y-1">
+                <button type="submit" className="w-full sm:w-auto inline-flex items-center justify-center px-10 py-4 font-barlow-condensed font-bold uppercase tracking-widest text-white bg-primary rounded-lg transition-all shadow-[0_0_20px_rgba(44,69,174,0.3)] hover:shadow-[0_0_35px_rgba(44,69,174,0.6)] hover:-translate-y-1">
                   Submit Request
                   <Send className="w-4 h-4 ml-3" />
                 </button>
@@ -164,14 +164,14 @@ export default function ContactPage() {
       <div className="border-t border-white/5 mt-24">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
           <div className="text-center mb-12">
-            <h2 style={{ fontFamily: '"Barlow", sans-serif', textTransform: 'uppercase' }} className="text-3xl font-barlow font-black uppercase tracking-tight text-white mb-4">Service Jurisdiction</h2>
-            <p style={{ fontFamily: '"Inter", sans-serif' }} className="text-slate-400 font-inter font-light">Rapid-response commercial HVAC & refrigeration dispatch zones.</p>
+            <h2 className="text-3xl font-barlow font-black uppercase tracking-tight text-white mb-4">Service Jurisdiction</h2>
+            <p className="text-slate-400 font-inter font-light">Rapid-response commercial HVAC & refrigeration dispatch zones.</p>
           </div>
           <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-4">
             {["Paris, TX", "Broken Bow, OK", "Idabel, OK", "Valliant, OK", "Hugo, OK", "Antlers, OK"].map(city => (
               <div key={city} className="bg-white/[0.02] border border-white/5 rounded-xl p-4 text-center hover:bg-slate-900 hover:border-primary/50 transition-all group">
                 <MapPin className="w-5 h-5 text-slate-500 group-hover:text-primary mx-auto mb-2 transition-colors" />
-                <span style={{ fontFamily: '"Barlow Condensed", sans-serif', textTransform: 'uppercase', letterSpacing: '0.05em' }} className="text-sm font-barlow-condensed font-bold tracking-widest uppercase text-slate-300">{city}</span>
+                <span className="text-sm font-barlow-condensed font-bold tracking-widest uppercase text-slate-300">{city}</span>
               </div>
             ))}
           </div>

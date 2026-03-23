@@ -20,14 +20,14 @@ export default function Ticker() {
         {/* Double the content to create a seamless loop */}
         {[...Array(2)].map((_, i) => (
           <div key={i} className="flex items-center">
-            <span style={{ fontFamily: '"Barlow Condensed", sans-serif', textTransform: 'uppercase', letterSpacing: '0.05em' }} className="text-slate-400 font-barlow-condensed font-semibold uppercase tracking-widest px-4 text-sm">SERVING:</span>
+            <span className="text-slate-400 font-barlow-condensed font-semibold uppercase tracking-widest px-4 text-sm">SERVING:</span>
             {cities.map((city, index) => (
               <div key={`${i}-${index}`} className="flex items-center">
-                <span style={{ fontFamily: '"Barlow Condensed", sans-serif', textTransform: 'uppercase', letterSpacing: '0.05em' }} className="text-white font-barlow-condensed font-bold uppercase tracking-widest px-4 text-sm">{city}</span>
+                <span className="text-white font-barlow-condensed font-bold uppercase tracking-widest px-4 text-sm">{city}</span>
                 <span className="text-primary px-2">•</span>
               </div>
             ))}
-            <span style={{ fontFamily: '"Barlow Condensed", sans-serif', textTransform: 'uppercase', letterSpacing: '0.05em' }} className="text-slate-400 font-barlow-condensed font-semibold uppercase tracking-widest px-4 text-sm italic">and everywhere in between</span>
+            <span className="text-slate-400 font-barlow-condensed font-semibold uppercase tracking-widest px-4 text-sm italic">and everywhere in between</span>
             <span className="text-primary px-2 mr-8">•</span>
           </div>
         ))}
